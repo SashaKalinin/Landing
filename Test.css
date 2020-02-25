@@ -45,6 +45,10 @@ header {
     margin-left: 15px;
     margin-bottom: 3px;
 }
+.header__logo:hover{
+    box-shadow: #b2f2ee 3px 3px 5px;
+    transition: 0.3s;
+}
 .header__tittle{
     font-size: 45px;
     font-family: "Montserrat", sans-serif;
@@ -98,6 +102,8 @@ header {
 .conteiner{
     background-color: #f8fafa;
     min-width: 394px;
+    width: 100%;
+    background-size: cover;
 }
 .about__us{
     display: grid;
@@ -106,13 +112,35 @@ header {
     max-width: 1170px;
     margin: 0 auto;
     grid-template-rows: 283px 701px;
+    grid-template-areas:'about__us_title_sub about__us_title_sub ' 'work_img about__us_h3_text';
+    grid-template-columns: 52% 51%;
 }
+
+.about__us_title_sub{
+    grid-area: about__us_title_sub;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.work_img{
+    grid-area: work_img;
+}
+.about__us_a{
+    justify-self: end;
+    margin-right: 90px;
+}
+.about__us_h3_text{
+    grid-area: about__us_h3_text;
+}
+
+
 .about__us_title{
     font-family: 'Montserrat', sans-serif, bold ;
     font-size: 38px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 .about__us_sub{
     font-family: 'Merriweather',sans-serif, 400;
@@ -122,7 +150,6 @@ header {
     color: #848585;
 }
 
-    
 .work_img:hover{
     box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
     transition: 0.3s;
@@ -132,14 +159,21 @@ header {
     font-size: 20px;
     text-transform: uppercase;
     color: #646565;
+    word-spacing: 3px;
     letter-spacing: 2px;
-    word-spacing: 8px;
+    margin-bottom: 22px;
 }
 .about__us_text{
     font-family: 'Raleway';
     font-weight: 400;
-    word-spacing: 5px;
-    letter-spacing: 2px;    
+    word-spacing: 4px;   
+    margin-bottom: 33px; 
+    line-height: 28px;
+}
+.about__us_h3_text_inner{
+    text-align: justify;
+    max-width: 479px;
+    
 }
 
   
@@ -163,3 +197,47 @@ header {
        display: none;
       }
   }
+
+  @media (max-width:1005px){
+    .about__us_h3_text_inner{
+        max-width: 320px;
+        transition: 0.6s;
+    } 
+  }
+  
+  @media (min-width:1005px){
+    .about__us_h3_text_inner{
+        max-width: 479px;
+        transition: 0.6s;
+    } 
+  }
+
+  @media (max-width:936px){
+    .work_img{
+        max-width: 75%;
+        transition: 0.6s;
+    } 
+    .about__us_a{
+        margin-left: 10px;
+        transition: 0.6s;
+    }
+  }
+  @media (max-width:684px){
+    .about__us{
+        grid-template-columns: 100%;
+        grid-template-areas:'about__us_title_sub about__us_title_sub '
+        'about__us_h3_text about__us_h3_text' 'work_img work_img';
+    }
+    .about__us_h3_text_inner{
+        margin: 0 auto;
+    }
+    .about__us_a{
+        justify-items: center;
+        justify-self: center;
+        margin: 0;
+    }
+    .work_img{
+        max-width: 100%;
+    }
+  }
+    
