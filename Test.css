@@ -47,7 +47,11 @@ header {
 }
 .header__logo:hover{
     box-shadow: #b2f2ee 3px 3px 5px;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
 }
 .header__tittle{
     font-size: 45px;
@@ -79,8 +83,12 @@ header {
   }
   .header__button:hover{
       opacity: 0.55;
-      transition: 0.3s;
-  }
+      transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+}
   .header__button:active{
       background-color: #5dceda ;
   }
@@ -152,8 +160,12 @@ header {
 
 .work_img:hover{
     box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
-    transition: 0.3s;
-  }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
 .about__us_h3{
     font-family: 'Merriweather',sans-serif, bold;
     font-size: 20px;
@@ -222,21 +234,80 @@ header {
     align-items: center;
     justify-content: center;
     grid-column-gap: 14px;
-    grid-row-gap: 10px;
-    
+    grid-row-gap: 10px;  
 }
 .works_img{
-    width: 100%;
+    width: 100%;  
 }
+.works_img:hover{
+    opacity: 0.7;
+    transition: 0.3s ease ;
+    -webkit-transition: 0.3s ease ;
+    -moz-transition: 0.3s ease ;
+    -ms-transition: 0.3s ease ;
+    -o-transition: 0.3s ease ;
+}
+
+
+
+
+
+
 /*FEATURED_WORKS_END
  ====================================================================================== */
 
+
+
+
  /*OUR_TEEM
  ====================================================================================== */
+.conteiner__teem{
+    min-width: 394px;
+    width: 100%;
+    max-width: 1170px;
+    min-height:1320px;
+    margin: 0 auto;
+}
+.our__teem_tittle{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 316px;
+}
+.teem__tittle{
+    font-family: 'Montserrat', sans-serif, bold ;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    align-self: end;
+    justify-self: center;
+}
+.teem__sub{
+    font-family: 'Merriweather',sans-serif, 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #848585;
+    justify-self: center;
+    margin-top: 10px;
+}
+.our__teem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 14px;
+    grid-row-gap: 10px;  
+}
+.teem__img{
+    width: 100%;  
+}
 
 
-
-
+/*MODEL_FRAME
+ ====================================================================================== */
 
 
 
@@ -271,15 +342,23 @@ header {
   @media (max-width:1005px){
     .about__us_h3_text_inner{
         max-width: 320px;
-        transition: 0.6s;
-    } 
+        transition: 0.6s ease;
+        -webkit-transition: 0.6s ease;
+        -moz-transition: 0.6s ease;
+        -ms-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+} 
   }
   
   @media (min-width:1005px){
     .about__us_h3_text_inner{
         max-width: 479px;
-        transition: 0.6s;
-    } 
+        transition: 0.6s ease;
+        -webkit-transition: 0.6s ease;
+        -moz-transition: 0.6s ease;
+        -ms-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+} 
   }
   @media (max-width:1021px){
       .about__us_h3{
@@ -290,12 +369,20 @@ header {
   @media (max-width:936px){
     .work_img{
         max-width: 75%;
-        transition: 0.6s;
-    } 
+        transition: 0.6s ease;
+        -webkit-transition: 0.6s ease;
+        -moz-transition: 0.6s ease;
+        -ms-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+} 
     .about__us_a{
         margin-left: 10px;
-        transition: 0.6s;
-    }
+        transition: 0.6s ease;
+        -webkit-transition: 0.6s ease;
+        -moz-transition: 0.6s ease;
+        -ms-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+}
   }
   @media (max-width:684px){
     .about__us{
@@ -331,6 +418,27 @@ header {
         font-size: 25px;
     }
     .feature_sub{
+        font-size: 15px;
+    }
+  }
+
+
+  @media (max-width:1237px){
+    .our__teem{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+    }
+
+    .teem__img{
+        justify-self: center;
+    }
+  }
+  @media (max-width:436px){
+    .teem__tittle{
+        font-size: 25px;
+    }
+    .teem__sub{
         font-size: 15px;
     }
   }
