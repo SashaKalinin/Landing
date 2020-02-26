@@ -261,7 +261,13 @@ header {
 
  /*OUR_TEEM
  ====================================================================================== */
-.conteiner__teem{
+.conteiner_t{
+    background-color: #f9fbfb;
+    width: 100%;
+    background-size: cover;
+}
+ .conteiner__teem{
+    background-color: #f9fbfb;
     min-width: 394px;
     width: 100%;
     max-width: 1170px;
@@ -302,16 +308,111 @@ header {
     grid-row-gap: 10px;  
 }
 .teem__img{
-    width: 100%;  
+    width: 100%; 
+    z-index: 1;
+    position: relative;
+    
+}
+.teem__item{
+    text-decoration: none;
 }
 
 
+
 /*MODEL_FRAME
+ ====================================================================================== */
+ .model__frame{
+    cursor: pointer;
+     position: absolute;
+     z-index: 2;
+    width: 335px;
+    height: 240px;
+    background-color: #70f6eb;
+    margin-left: 23px;
+    margin-top: 200px;
+    opacity: 0.98;
+    box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.70);
+    opacity: 0;
+}
+.model__frame:hover{
+    opacity: 1;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+}
+.model__frame::before{
+    position: absolute;
+    content: "";
+    border: 13px solid transparent;
+    border-bottom: 20px solid #70f6eb;
+    bottom: 99%;
+    left: 5%;
+}
+.model__frame_inner{
+       margin-left: 40px;
+       
+    
+}
+.model__frame a{
+    color: #666767;
+    font-size: 14px; 
+    
+}
+.model__frame a:nth-child(n+2){
+    margin-right: 10px;
+}
+.model__frame_name{
+    font-family: 'Merriweather',sans-serif ;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2c3938;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+.model__frame_prof{
+    color: #767070;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+
+
+.model__frame_about{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #29635e;
+    line-height: 22px;
+    margin-bottom: 39px;
+    
+}
+/*MODEL_FRAME_END
  ====================================================================================== */
 
 
 
 
+ /*NAVIGATION
+ ====================================================================================== */
+.conteiner_nav{
+    width: 100%;
+    background-image: url(img/christmas_snow_trees.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 870px;
+}
+
+.navigation__inner{
+    min-width: 394px;
+    width: 1170px;
+    margin: 0 auto;
+}
 
 
 
@@ -319,8 +420,52 @@ header {
 
 
 
+/*FOOTER
+ ====================================================================================== */
+footer{
+    width: 100%;
+    min-width: 394px;
+    min-height: 313px;
+    background-color: #262b2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 18px;
+}
 
+.footer__items a{
+    display: inline-block;
+    color: #bbb8b9;
+    width: 43px;
+    height: 36px;
+    background-color: #3f4244;
+    font-size: 22px;
+    margin-right:7px ;
+    text-align: center; 
+}
+.footer__items i{
+    margin-top: 9px;
+}
+
+.footer__items a:hover{
+    color: #081e1c;
+    background-color: #6eeee4;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
  
+
 
 
 

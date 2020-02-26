@@ -1,0 +1,40 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+.model__frame{
+    width: 320px;
+    height: 200px;
+    background-color: #b2f2ee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    
+}
+.model__frame::before{
+    position: absolute;
+    content: "";
+    border: 13px solid transparent;
+    border-bottom: 20px solid #b2f2ee;
+    bottom: 99%;
+    left: 5%;
+}
+.model__frame_inner{
+    margin-left: 40px;
+}
+.model__frame a{
+    color: #666767;
+    margin-right: 5px;
+    
+}
+.model__frame_name{
+    
+}
+.model__frame_about{
+    
+}
