@@ -240,16 +240,15 @@ header {
     grid-row-gap: 10px;  
 }
 .works_img{
-    width: 100%; 
+    width: 100%;
     transition: 0.3s ease ;
     -webkit-transition: 0.3s ease ;
     -moz-transition: 0.3s ease ;
     -ms-transition: 0.3s ease ;
-    -o-transition: 0.3s ease ; 
+    -o-transition: 0.3s ease ;
 }
 .works_img:hover{
-    opacity: 0.7;
-    
+    opacity: 0.7
 }
 
 
@@ -416,8 +415,23 @@ header {
     width: 100%;
     min-width: 394px;
     height: 887px;
-    background: linear-gradient(180deg, rgba(249,251,251,0.9654236694677871) 35%, rgba(249,251,251,0.7861519607843137) 56%, rgba(249,251,251,0.5956757703081232) 100%);
+    background: linear-gradient(180deg, rgba(249,251,251,.98) 35%, rgba(249,251,251,0.75) 56%, rgba(249,251,251,0.7) 100%);
 }
+
+.navigation__inner{
+    width:100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    min-height: 887px;
+}
+
+
+
+
+
+
+
+
 
 
 /*FOOTER
@@ -463,10 +477,13 @@ footer{
 
 .footer__items a:hover{
     color: #081e1c;
-    background-color: #6eeee4;
+    background-color: #6eeee4; 
+}
+.footer__items a:active{
+    color: #6eeee4;
+    background-color: #262b2e; 
     
 }
- 
 
 
 
