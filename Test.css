@@ -5,6 +5,9 @@ font-family: 'Raleway', ; */
     margin: 0;
     padding: 0;
     font-family: 'Montserrat',sans-serif ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -423,16 +426,158 @@ header {
     max-width: 1170px;
     margin: 0 auto;
     min-height: 887px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.nav_section{
+    width: 544px;
+    height: 391px;
+    background-color: rgba(2, 22, 35, .6);
+    box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+    padding: 35px;
+    margin-bottom: 124px;
+}
+.input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 7px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid #6d7981; 
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease; 
+}
+input {
+    outline:none;
+}
+
+input:focus{
+    border-color: #6eeee4;
+}
+
+.input::placeholder{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px;
+}
+::-moz-placeholder{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px;
+}
+::-webkit-input-placeholder{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px; 
+}
+::-ms-input-placeholder{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px; 
+}
+textarea{
+    width: 100%;
+    height: 117px;
+    margin-bottom:37px ;
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid #6d7981;
+    outline:none;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+textarea:focus{
+    border-color: #6eeee4;
+}
+
+textarea::placeholder{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px;
+}
+
+
+
+.submit{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #2e6b66;
+    letter-spacing: 3px;
+    width: 246px;
+    height: 55px;
+    background-color: #6eeee4;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+}
+.navigation__inner_nav{
+    width: 457px;
+    max-height:391px ;
+    padding: 35px;
+    background-color: rgba(2, 22, 35, .6);
+    box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+    margin-bottom: 124px;
+    margin-left: 5px;
+}
+.nav_contacts,
+.nav_web{
+    font-family: 'Raleway',sans-serif ;
+    font-weight: 400;
+    color: #b7bbbe;
+    font-size: 15px; 
+    line-height: 20px;
+}
+.nav_web{
+    margin-bottom: 22px;
+}
+.nav_contacts{
+    margin-bottom: 30px;
+}
+
+.navigation__inner_nav_map{
+    width: 100%;
+    height: 240px;
+    
+}
+.bautton__block input{
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.bautton__block input:hover{
+    background-color: rgba(2, 22, 35, .2);
+    color: #6eeee4;
+}
+.bautton__block input:active{
+    opacity: 0.7;
 }
 
 
 
 
-
-
-
-
-
+  
 
 /*FOOTER
  ====================================================================================== */
@@ -606,3 +751,28 @@ footer{
         font-size: 15px;
     }
   }
+
+  @media (max-width:626px){
+    .navigation__inner{
+        flex-wrap: wrap;
+    }
+    .conteiner_nav{
+        min-height:887px ;
+    }
+    .navigation__inner_nav,
+    .nav_section{
+        margin-bottom: 0;
+    }
+    .nav_section{
+        margin-bottom: 5px;
+    }
+    .nav_contacts{
+        margin-bottom: 5px;
+    }
+    .navigation__inner_nav{
+        width: 100%;
+        padding: 0;
+    }
+
+  }   
+  
