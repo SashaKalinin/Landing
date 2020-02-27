@@ -44,14 +44,15 @@ header {
     justify-self: start;
     margin-left: 15px;
     margin-bottom: 3px;
-}
-.header__logo:hover{
-    box-shadow: #b2f2ee 3px 3px 5px;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+}
+.header__logo:hover{
+    box-shadow: #b2f2ee 3px 5px 5px;
+    
 }
 .header__tittle{
     font-size: 45px;
@@ -79,15 +80,16 @@ header {
       color: #000;
       letter-spacing: 4px;
       line-height: 1.556;
-
-  }
-  .header__button:hover{
-      opacity: 0.55;
       transition: 0.3s ease;
       -webkit-transition: 0.3s ease;
       -moz-transition: 0.3s ease;
       -ms-transition: 0.3s ease;
       -o-transition: 0.3s ease;
+
+  }
+  .header__button:hover{
+      opacity: 0.55;
+      
 }
   .header__button:active{
       background-color: #5dceda ;
@@ -133,6 +135,11 @@ header {
 
 .work_img{
     grid-area: work_img;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
 }
 .about__us_a{
     justify-self: end;
@@ -160,11 +167,7 @@ header {
 
 .work_img:hover{
     box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
+    
 }
 .about__us_h3{
     font-family: 'Merriweather',sans-serif, bold;
@@ -237,15 +240,16 @@ header {
     grid-row-gap: 10px;  
 }
 .works_img{
-    width: 100%;  
-}
-.works_img:hover{
-    opacity: 0.7;
+    width: 100%; 
     transition: 0.3s ease ;
     -webkit-transition: 0.3s ease ;
     -moz-transition: 0.3s ease ;
     -ms-transition: 0.3s ease ;
-    -o-transition: 0.3s ease ;
+    -o-transition: 0.3s ease ; 
+}
+.works_img:hover{
+    opacity: 0.7;
+    
 }
 
 
@@ -261,13 +265,12 @@ header {
 
  /*OUR_TEEM
  ====================================================================================== */
-.conteiner_t{
-    background-color: #f9fbfb;
+ .conteiner_t{
+     background-color: #f9fbfb; 
     width: 100%;
-    background-size: cover;
-}
+    background-size: cover; 
+} 
  .conteiner__teem{
-    background-color: #f9fbfb;
     min-width: 394px;
     width: 100%;
     max-width: 1170px;
@@ -333,14 +336,15 @@ header {
     opacity: 0.98;
     box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.70);
     opacity: 0;
-}
-.model__frame:hover{
-    opacity: 1;
     transition: 0.8s ease;
     -webkit-transition: 0.8s ease;
     -moz-transition: 0.8s ease;
     -ms-transition: 0.8s ease;
     -o-transition: 0.8s ease;
+}
+.model__frame:hover{
+    opacity: 1;
+    
 }
 .model__frame::before{
     position: absolute;
@@ -401,28 +405,25 @@ header {
  ====================================================================================== */
 .conteiner_nav{
     width: 100%;
-    background-image: url(img/christmas_snow_trees.jpg);
+    min-width: 394px;
+    height: 887px;
+    background-image: url(img/christmas_snow_trees2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 870px;
 }
-
-.navigation__inner{
+.conteiner_nav_opacity{
+    width: 100%;
     min-width: 394px;
-    width: 1170px;
-    margin: 0 auto;
+    height: 887px;
+    background: linear-gradient(180deg, rgba(249,251,251,0.9654236694677871) 35%, rgba(249,251,251,0.7861519607843137) 56%, rgba(249,251,251,0.5956757703081232) 100%);
 }
-
-
-
-
-
 
 
 /*FOOTER
  ====================================================================================== */
 footer{
+    position: static;
     width: 100%;
     min-width: 394px;
     min-height: 313px;
@@ -453,16 +454,17 @@ footer{
 }
 .footer__items i{
     margin-top: 9px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 .footer__items a:hover{
     color: #081e1c;
     background-color: #6eeee4;
-    transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
+    
 }
  
 
